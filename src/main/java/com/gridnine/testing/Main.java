@@ -55,7 +55,6 @@ public class Main {
 
     static class GroundTimeExceedsFilter implements FlightFilter {
         private final int hoursThreshold;
-
         public GroundTimeExceedsFilter(int hoursThreshold) {
             this.hoursThreshold = hoursThreshold;
         }
