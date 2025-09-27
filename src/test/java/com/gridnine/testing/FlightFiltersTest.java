@@ -29,7 +29,6 @@ class FlightFiltersTest {
                 createSegment(now.minusHours(3), now.minusHours(2))
         ));
 
-
         assertTrue(filter.testFlight(flightInFuture));
         assertFalse(filter.testFlight(flightInPast));
         assertFalse(filter.testFlight(flightMixed));
@@ -47,7 +46,6 @@ class FlightFiltersTest {
                 createSegment(now.plusHours(1), now.plusHours(2)),
                 createSegment(now.plusHours(3), now.plusHours(2))
         ));
-
 
         assertTrue(filter.testFlight(validFlight));
         assertFalse(filter.testFlight(invalidFlight));

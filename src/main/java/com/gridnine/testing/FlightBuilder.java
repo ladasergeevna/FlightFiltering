@@ -27,9 +27,6 @@ class FlightBuilder {
                         threeDaysFromNow.plusHours(6), threeDaysFromNow.plusHours(7))
 
         );
-
-
-
     }
 
     private static Flight createFlight(final LocalDateTime... dates) {
